@@ -242,10 +242,10 @@ Se incluyen capturas de pantalla dentro de la carpeta de la asignatura:
 ```
 sistemas_informaticos/
 └── capturas/
-    ├── 01_ejecucion_programa.png
-    ├── 02_login_funcionando.png
-    ├── 03_gestion_datos.png
-    └── 04_phpmyadmin.png
+    ├── funcionamiento_web
+    ├── funcionamiento_java
+    ├── funcionamiento bbdd
+    
 ```
 
 Ejemplos:
