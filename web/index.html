@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Gestión de villas en Oropesa del Mar | AA Property Services</title>
+  <meta name="description" content="Servicios exclusivos de gestión, supervisión y mantenimiento de villas en Oropesa del Mar. Cuidamos tu propiedad con atención personalizada y experiencia premium.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gestión de villas en Oropesa del Mar | AA Property Services">
+  <meta property="og:description" content="Servicios exclusivos de gestión, supervisión y mantenimiento de villas en Oropesa del Mar. Cuidamos tu propiedad con atención personalizada.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:url" content="https://www.aapropertyservices.com/">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="AA Property Services">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gestión de villas en Oropesa del Mar | AA Property Services">
+  <meta name="twitter:description" content="Servicios exclusivos de gestión, supervisión y mantenimiento de villas en Oropesa del Mar.">
+  <meta name="twitter:image" content="assets/img/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="assets/img/AAP-S.svg" alt="Logo AA Property Services" width="40" height="40">
+        </a>
+        <a href="index.html" class="brand">AA Property Services</a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="servicios.html" data-i18n="nav.servicios">Servicios</a></li>
+          <li><a href="sobre-nosotros.html" data-i18n="nav.sobre">Sobre nosotros</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-buttons">
+        <a href="login-clientes.html" class="btn btn-outline" data-i18n="nav.clientes">Acceso clientes</a>
+        <a href="login-personal.html" class="btn btn-primary" data-i18n="nav.personal">Acceso personal</a>
+      </div>
+
+    </div>
+
+    <!-- BARRA DE IDIOMAS -->
+    <div class="lang-bar">
+      <div class="lang-switcher" role="group" aria-label="Seleccionar idioma">
+
+        <!-- 🇪🇸 España -->
+        <button class="lang-btn active" data-lang="es" aria-pressed="true" aria-label="Español" onclick="setLang('es')">
+          <svg viewBox="0 0 28 21" width="28" height="21" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="21" fill="#c60b1e"/>
+            <rect y="5.25" width="28" height="10.5" fill="#f1bf00"/>
+          </svg>
+        </button>
+
+        <!-- 🇬🇧 Reino Unido -->
+        <button class="lang-btn" data-lang="en" aria-pressed="false" aria-label="English" onclick="setLang('en')">
+          <svg viewBox="0 0 28 21" width="28" height="21" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="21" fill="#012169"/>
+            <path d="M0,0 L28,21 M28,0 L0,21" stroke="#fff" stroke-width="4"/>
+            <path d="M0,0 L28,21 M28,0 L0,21" stroke="#c8102e" stroke-width="2.5"/>
+            <path d="M14,0 V21 M0,10.5 H28" stroke="#fff" stroke-width="6"/>
+            <path d="M14,0 V21 M0,10.5 H28" stroke="#c8102e" stroke-width="3.5"/>
+          </svg>
+        </button>
+
+        <!-- 🇫🇷 Francia -->
+        <button class="lang-btn" data-lang="fr" aria-pressed="false" aria-label="Français" onclick="setLang('fr')">
+          <svg viewBox="0 0 28 21" width="28" height="21" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="21" fill="#ed2939"/>
+            <rect width="18.67" height="21" fill="#fff"/>
+            <rect width="9.33" height="21" fill="#002395"/>
+          </svg>
+        </button>
+
+        <!-- 🇩🇪 Alemania -->
+        <button class="lang-btn" data-lang="de" aria-pressed="false" aria-label="Deutsch" onclick="setLang('de')">
+          <svg viewBox="0 0 28 21" width="28" height="21" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="21" fill="#ffce00"/>
+            <rect width="28" height="14" fill="#d00"/>
+            <rect width="28" height="7" fill="#000"/>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero hero-pro" aria-labelledby="hero-heading">
+      <div class="container hero-content hero-content-pro">
+        <div class="hero-text hero-text-pro">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Gestión integral de villas en Oropesa del Mar</p>
+          <h1 id="hero-heading" data-i18n="hero.h1">Servicios exclusivos para una vida sin preocupaciones</h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            En AA Property Services cuidamos villas y propiedades con un servicio integral de
+            supervisión, mantenimiento, atención personalizada y asistencia premium para que cada
+            propietario disfrute de su vivienda con total tranquilidad.
+          </p>
+
+          <div class="hero-points" aria-label="Puntos clave del servicio">
+            <span data-i18n="hero.punto1">Supervisión continua</span>
+            <span data-i18n="hero.punto2">Mantenimiento preventivo</span>
+            <span data-i18n="hero.punto3">Atención personalizada</span>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="servicios.html" class="btn btn-primary" data-i18n="hero.cta1">Ver servicios</a>
+            <a href="contacto.html"  class="btn btn-outline"  data-i18n="hero.cta2">Contactar</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-image-card">
+            <img
+              src="assets/img/poblado-interior-t1.webp"
+              alt="Interior de villa de lujo en Oropesa del Mar"
+              data-i18n-alt="hero.img.alt"
+              fetchpriority="high"
+            >
+            <div class="hero-image-badge">
+              <span>AA Property Services</span>
+              <strong>Luxury Property Care</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPUESTA DE VALOR -->
+    <section class="section" aria-labelledby="propuesta-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="propuesta.eyebrow">Nuestra propuesta</p>
+          <h2 id="propuesta-heading" data-i18n="propuesta.h2">Mucho más que mantenimiento</h2>
+          <p data-i18n="propuesta.desc">
+            Ofrecemos una solución completa para villas y propiedades exclusivas, combinando
+            supervisión periódica, mantenimiento preventivo, gestión de incidencias y servicios
+            premium en una experiencia profesional y cuidada.
+          </p>
+        </div>
+
+        <div class="cards-3">
+          <article class="card">
+            <h3 data-i18n="propuesta.c1.h3">Supervisión y mantenimiento</h3>
+            <p data-i18n="propuesta.c1.p">
+              Realizamos revisiones regulares para comprobar el estado general de la vivienda,
+              detectar incidencias a tiempo y asegurar el correcto mantenimiento.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="propuesta.c2.h3">Gestión de incidencias</h3>
+            <p data-i18n="propuesta.c2.p">
+              Coordinamos actuaciones técnicas y damos seguimiento a pequeñas incidencias antes
+              de que se conviertan en averías importantes.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="propuesta.c3.h3">Servicios premium</h3>
+            <p data-i18n="propuesta.c3.p">
+              Ponemos a disposición del cliente servicios exclusivos como chef privado, catering,
+              chófer, compras, belleza o bienestar bajo demanda.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section class="section section-alt" aria-labelledby="elegirnos-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="elegirnos.eyebrow">Por qué elegirnos</p>
+          <h2 id="elegirnos-heading" data-i18n="elegirnos.h2">Una gestión pensada para propietarios exigentes</h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box" data-i18n="elegirnos.f1">Atención personalizada</div>
+          <div class="feature-box" data-i18n="elegirnos.f2">Comunicación directa</div>
+          <div class="feature-box" data-i18n="elegirnos.f3">Seguimiento de servicios</div>
+          <div class="feature-box" data-i18n="elegirnos.f4">Prevención de incidencias</div>
+          <div class="feature-box" data-i18n="elegirnos.f5">Cuidado continuo</div>
+          <div class="feature-box" data-i18n="elegirnos.f6">Experiencia premium</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section class="section" aria-labelledby="como-funciona-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="como.eyebrow">Cómo funciona</p>
+          <h2 id="como-funciona-heading" data-i18n="como.h2">Un servicio sencillo y eficiente</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3 data-i18n="como.s1.h3">Contratación del plan</h3>
+            <p data-i18n="como.s1.p">El propietario elige la opción que mejor se adapta a su vivienda y necesidades.</p>
+          </article>
+
+          <article class="step">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3 data-i18n="como.s2.h3">Supervisión de la propiedad</h3>
+            <p data-i18n="como.s2.p">Nuestro equipo revisa la vivienda y realiza el seguimiento de su estado general.</p>
+          </article>
+
+          <article class="step">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3 data-i18n="como.s3.h3">Registro de actuaciones</h3>
+            <p data-i18n="como.s3.p">Las revisiones, mantenimientos e incidencias quedan organizados y controlados.</p>
+          </article>
+
+          <article class="step">
+            <span class="step-number" aria-hidden="true">4</span>
+            <h3 data-i18n="como.s4.h3">Solicitud de servicios</h3>
+            <p data-i18n="como.s4.p">El cliente puede pedir servicios adicionales y consultar el seguimiento de su villa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section gallery-section" aria-labelledby="galeria-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="galeria.eyebrow">Propiedades que cuidamos</p>
+          <h2 id="galeria-heading" data-i18n="galeria.h2">Entornos diseñados para disfrutar, gestionar y conservar</h2>
+          <p data-i18n="galeria.desc">
+            Trabajamos en villas y entornos residenciales exclusivos, donde cada detalle importa.
+            Nuestro servicio está pensado para mantener cada propiedad en perfecto estado y
+            acompañar una experiencia de vida premium.
+          </p>
+        </div>
+
+        <div class="gallery-layout">
+          <article class="gallery-card gallery-card-large">
+            <img
+              src="assets/img/poblado-vista-villa.webp"
+              alt="Vista exterior de villa de lujo en Oropesa del Mar"
+              data-i18n-alt="galeria.img1.alt"
+              width="800"
+              height="600"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag" data-i18n="galeria.tag1">Villa principal</span>
+              <h3 data-i18n="galeria.g1.h3">Arquitectura, privacidad y cuidado continuo</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card">
+            <img
+              src="assets/img/piscina-cesped.webp"
+              alt="Piscina infinity con vistas al mar"
+              data-i18n-alt="galeria.img2.alt"
+              width="600"
+              height="400"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag" data-i18n="galeria.tag2">Zonas exteriores</span>
+              <h3 data-i18n="galeria.g2.h3">Espacios pensados para el descanso y la exclusividad</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card">
+            <img
+              src="assets/img/poblado-exterior-vista.webp"
+              alt="Vista aérea de urbanización exclusiva en Oropesa del Mar"
+              data-i18n-alt="galeria.img3.alt"
+              width="600"
+              height="400"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag" data-i18n="galeria.tag3">Entorno residencial</span>
+              <h3 data-i18n="galeria.g3.h3">Promociones premium en ubicaciones privilegiadas</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COBERTURA + ÁREA PRIVADA -->
+    <section class="section section-alt" aria-labelledby="cobertura-heading">
+      <div class="container two-columns">
+        <div>
+          <p class="eyebrow" data-i18n="cobertura.eyebrow">Cobertura</p>
+          <h2 id="cobertura-heading" data-i18n="cobertura.h2">Dónde trabajamos</h2>
+          <p data-i18n="cobertura.p">
+            Actualmente AA Property Services centra su actividad en Oropesa del Mar, prestando
+            servicio principalmente a villas de Andryala y Barlovento, con previsión de expansión
+            hacia nuevas promociones en el futuro.
+          </p>
+          <ul class="custom-list">
+            <li>Andryala</li>
+            <li>Barlovento</li>
+            <li>Próximamente: El Poblado</li>
+            <li>Próximamente: Amanece</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="eyebrow" data-i18n="area.eyebrow">Área privada</p>
+          <h2 data-i18n="area.h2">Una gestión más cómoda para clientes y equipo interno</h2>
+          <div class="cards-2">
+            <article class="card">
+              <h3 data-i18n="area.c1.h3">Área cliente</h3>
+              <p data-i18n="area.c1.p">
+                Consulta de servicios, historial de revisiones, reportes, incidencias y
+                seguimiento general de la propiedad.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 data-i18n="area.c2.h3">Área de personal</h3>
+              <p data-i18n="area.c2.p">
+                Seguimiento interno de tareas, coordinación operativa y control de actuaciones
+                realizadas en cada villa.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta" aria-labelledby="cta-heading">
+      <div class="container cta-box">
+        <h2 id="cta-heading" data-i18n="cta.index.h2">Welcome Home, we take care of everything</h2>
+        <p data-i18n="cta.index.p">
+          Cuidamos cada detalle para que tu propiedad esté siempre lista, supervisada y gestionada
+          con la atención que merece.
+        </p>
+        <a href="contacto.html" class="btn btn-primary" data-i18n="cta.index.btn">Solicitar información</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>AA Property Services</h3>
+        <p data-i18n="footer.tagline">Servicios exclusivos para una vida sin preocupaciones.</p>
+      </div>
+
+      <div>
+        <h4 data-i18n="footer.ubicacion">Ubicación</h4>
+        <p data-i18n="footer.ciudad">Oropesa del Mar, Castellón</p>
+      </div>
+
+      <div>
+        <h4 data-i18n="footer.contacto">Contacto</h4>
+        <address>
+          <p><a href="mailto:info@aapropertyservices.com">info@aapropertyservices.com</a></p>
+          <p><a href="tel:+34601927601">+34 601 927 601</a></p>
+        </address>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/i18n.js"></script>
+
+</body>
+</html>

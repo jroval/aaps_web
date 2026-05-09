@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre nosotros | AA Property Services — Gestión de villas en Oropesa del Mar</title>
+  <meta name="description" content="Conoce el equipo de AA Property Services. Una empresa especializada en la gestión, supervisión y mantenimiento de villas exclusivas en Oropesa del Mar.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sobre nosotros | AA Property Services">
+  <meta property="og:description" content="Conoce el equipo de AA Property Services, especialistas en gestión y mantenimiento de villas en Oropesa del Mar.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:url" content="https://www.aapropertyservices.com/sobre-nosotros.html">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="AA Property Services">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sobre nosotros | AA Property Services">
+  <meta name="twitter:description" content="Conoce el equipo de AA Property Services, especialistas en gestión y mantenimiento de villas en Oropesa del Mar.">
+  <meta name="twitter:image" content="assets/img/og-image.jpg">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    .team-avatar {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #fff;
+      background-color: #1a1a2e;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="assets/img/AAP-S.svg" alt="Logo AA Property Services" width="40" height="40">
+        </a>
+        <a href="index.html" class="brand">AA Property Services</a>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="servicios.html" data-i18n="nav.servicios">Servicios</a></li>
+          <li><a href="sobre-nosotros.html" class="active" aria-current="page" data-i18n="nav.sobre">Sobre nosotros</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="nav-buttons">
+        <a href="login-clientes.html" class="btn btn-outline" data-i18n="nav.clientes">Acceso clientes</a>
+        <a href="login-personal.html" class="btn btn-primary" data-i18n="nav.personal">Acceso personal</a>
+      </div>
+    </div>
+    <div class="lang-bar">
+      <div class="lang-switcher" role="group" aria-label="Seleccionar idioma">
+        <button class="lang-btn active" data-lang="es" aria-pressed="true" aria-label="Español" onclick="setLang('es')">
+          <svg viewBox="0 0 28 21" width="28" height="21" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="21" fill="#c60b1e"/><rect y="5.25" width="28" height="10.5" fill="#f1bf00"/></svg>
+        </button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false" aria-label="English" onclick="setLang('en')">
+          <svg viewBox="0 0 28 21" width="28" height="21" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="21" fill="#012169"/><path d="M0,0 L28,21 M28,0 L0,21" stroke="#fff" stroke-width="4"/><path d="M0,0 L28,21 M28,0 L0,21" stroke="#c8102e" stroke-width="2.5"/><path d="M14,0 V21 M0,10.5 H28" stroke="#fff" stroke-width="6"/><path d="M14,0 V21 M0,10.5 H28" stroke="#c8102e" stroke-width="3.5"/></svg>
+        </button>
+        <button class="lang-btn" data-lang="fr" aria-pressed="false" aria-label="Français" onclick="setLang('fr')">
+          <svg viewBox="0 0 28 21" width="28" height="21" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="21" fill="#ed2939"/><rect width="18.67" height="21" fill="#fff"/><rect width="9.33" height="21" fill="#002395"/></svg>
+        </button>
+        <button class="lang-btn" data-lang="de" aria-pressed="false" aria-label="Deutsch" onclick="setLang('de')">
+          <svg viewBox="0 0 28 21" width="28" height="21" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="21" fill="#ffce00"/><rect width="28" height="14" fill="#d00"/><rect width="28" height="7" fill="#000"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero" aria-labelledby="sobre-heading">
+      <div class="container">
+        <p class="eyebrow" data-i18n="sobre.hero.eyebrow">Sobre nosotros</p>
+        <h1 id="sobre-heading" data-i18n="sobre.hero.h1">Una empresa pensada para ofrecer tranquilidad</h1>
+        <p data-i18n="sobre.hero.p">AA Property Services combina supervisión, mantenimiento, coordinación operativa y servicios premium en una experiencia clara, elegante y eficiente.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="quienes-heading">
+      <div class="container two-columns">
+        <div>
+          <p class="eyebrow" data-i18n="sobre.quienes.eyebrow">Quiénes somos</p>
+          <h2 id="quienes-heading" data-i18n="sobre.quienes.h2">Mucho más que una empresa de mantenimiento</h2>
+          <p data-i18n="sobre.quienes.p1">AA Property Services nace para responder a una necesidad concreta: que el propietario pueda confiar en que su vivienda está cuidada, supervisada y gestionada incluso cuando no está presente.</p>
+          <p data-i18n="sobre.quienes.p2">Nuestro trabajo no se limita a mantener una propiedad, sino a ofrecer una experiencia de control, comodidad, prevención y confianza.</p>
+        </div>
+        <div>
+          <p class="eyebrow" data-i18n="sobre.mision.eyebrow">Nuestra misión</p>
+          <h2 id="mision-heading" data-i18n="sobre.mision.h2">Cuidar cada villa como si siempre fuera a recibir a su propietario</h2>
+          <p data-i18n="sobre.mision.p">Nuestra misión es garantizar que cada propiedad se mantenga en perfecto estado, anticipándonos a incidencias, coordinando servicios y ofreciendo una atención personalizada que permita al cliente disfrutar de su vivienda sin preocupaciones.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="valores-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="sobre.valores.eyebrow">Nuestros valores</p>
+          <h2 id="valores-heading" data-i18n="sobre.valores.h2">La base de nuestro trabajo</h2>
+        </div>
+        <div class="cards-5">
+          <article class="card"><h3 data-i18n="sobre.val.c1.h3">Confianza</h3><p data-i18n="sobre.val.c1.p">Trabajamos con discreción, responsabilidad y trato profesional.</p></article>
+          <article class="card"><h3 data-i18n="sobre.val.c2.h3">Prevención</h3><p data-i18n="sobre.val.c2.p">Detectamos incidencias antes de que se conviertan en problemas mayores.</p></article>
+          <article class="card"><h3 data-i18n="sobre.val.c3.h3">Excelencia</h3><p data-i18n="sobre.val.c3.p">Cuidamos tanto la propiedad como la experiencia del cliente.</p></article>
+          <article class="card"><h3 data-i18n="sobre.val.c4.h3">Transparencia</h3><p data-i18n="sobre.val.c4.p">Apostamos por el seguimiento claro de actuaciones y mantenimientos.</p></article>
+          <article class="card"><h3 data-i18n="sobre.val.c5.h3">Atención personalizada</h3><p data-i18n="sobre.val.c5.p">Cada propiedad requiere un nivel de cuidado adaptado.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team-section" aria-labelledby="equipo-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="sobre.equipo.eyebrow">Nuestro equipo</p>
+          <h2 id="equipo-heading" data-i18n="sobre.equipo.h2">Profesionales dedicados al cuidado de cada propiedad</h2>
+          <p data-i18n="sobre.equipo.p">Un equipo cercano, profesional y orientado al detalle, enfocado en garantizar que cada villa se mantenga en perfectas condiciones en todo momento.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-image">
+              <img src="assets/img/andrea estévez.jpg" alt="Fotografía de Andrea Estévez, responsable de operaciones" width="300" height="300" loading="lazy">
+            </div>
+            <h3>Andrea Estévez</h3>
+            <p class="team-role" data-i18n="sobre.team.ae.role">Responsable de operaciones</p>
+            <p class="team-desc" data-i18n="sobre.team.ae.desc">Coordinación de servicios, supervisión de villas y gestión de incidencias.</p>
+          </article>
+          <article class="team-card">
+            <div class="team-image">
+              <div class="team-avatar" aria-hidden="true">CR</div>
+            </div>
+            <h3>Carlos Ruiz</h3>
+            <p class="team-role" data-i18n="sobre.team.cr.role">Mantenimiento técnico</p>
+            <p class="team-desc" data-i18n="sobre.team.cr.desc">Especialista en reparaciones, mantenimiento preventivo y control de instalaciones.</p>
+          </article>
+          <article class="team-card">
+            <div class="team-image">
+              <div class="team-avatar" aria-hidden="true">ML</div>
+            </div>
+            <h3>María López</h3>
+            <p class="team-role" data-i18n="sobre.team.ml.role">Atención al cliente</p>
+            <p class="team-desc" data-i18n="sobre.team.ml.desc">Atención personalizada, coordinación de servicios premium y soporte continuo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="como-trabajamos-heading">
+      <div class="container two-columns">
+        <div>
+          <p class="eyebrow" data-i18n="sobre.como.eyebrow">Cómo trabajamos</p>
+          <h2 id="como-trabajamos-heading" data-i18n="sobre.como.h2">Organización eficiente, servicio cercano</h2>
+          <p data-i18n="sobre.como.p1">Nuestro modelo operativo combina calidad de servicio y organización interna. Contamos con una unidad de servicio formada por profesionales de limpieza y jardinería, además de una coordinación centralizada que supervisa el estado de cada villa.</p>
+          <p data-i18n="sobre.como.p2">Para servicios especializados, trabajamos también con colaboradores externos seleccionados para garantizar una respuesta adecuada en cada situación.</p>
+        </div>
+        <div>
+          <p class="eyebrow" data-i18n="sobre.tech.eyebrow">Tecnología y seguimiento</p>
+          <h2 id="tecnologia-heading" data-i18n="sobre.tech.h2">Una visión digital del servicio</h2>
+          <p data-i18n="sobre.tech.p1">AA Property Services cuenta con un área privada desde la que centralizar la relación con el cliente, consultar el estado de la vivienda, seguir incidencias y mantener un historial organizado de actuaciones.</p>
+          <p data-i18n="sobre.tech.p2">De este modo, la experiencia resulta más cómoda, clara y profesional tanto para el propietario como para el equipo interno.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="dirigimos-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="sobre.dirigimos.eyebrow">A quién nos dirigimos</p>
+          <h2 id="dirigimos-heading" data-i18n="sobre.dirigimos.h2">Pensado para propiedades exclusivas</h2>
+          <p data-i18n="sobre.dirigimos.p">Nos dirigimos a propietarios de villas y promociones residenciales que buscan una gestión profesional, continua y de confianza.</p>
+        </div>
+        <div class="cards-3">
+          <article class="card"><h3 data-i18n="sobre.dir.c1.h3">Propietarios de villas</h3><p data-i18n="sobre.dir.c1.p">Personas que desean mantener su vivienda siempre cuidada y preparada.</p></article>
+          <article class="card"><h3 data-i18n="sobre.dir.c2.h3">Urbanizaciones premium</h3><p data-i18n="sobre.dir.c2.p">Entornos residenciales que requieren una gestión organizada y de calidad.</p></article>
+          <article class="card"><h3 data-i18n="sobre.dir.c3.h3">Promociones con visión de futuro</h3><p data-i18n="sobre.dir.c3.p">Un modelo de servicio preparado para crecer y adaptarse a nuevas propiedades.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-sobre-heading">
+      <div class="container cta-box">
+        <h2 id="cta-sobre-heading" data-i18n="sobre.cta.h2">Tu propiedad, en manos de un equipo que cuida cada detalle</h2>
+        <p data-i18n="sobre.cta.p">Queremos que cada cliente encuentre en AA Property Services una solución estable, elegante y eficaz para el cuidado de su vivienda.</p>
+        <a href="contacto.html" class="btn btn-primary" data-i18n="sobre.cta.btn">Hablar con nosotros</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>AA Property Services</h3>
+        <p data-i18n="footer.tagline">Servicios exclusivos para una vida sin preocupaciones.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.ubicacion">Ubicación</h4>
+        <p data-i18n="footer.ciudad">Oropesa del Mar, Castellón</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contacto">Contacto</h4>
+        <address>
+          <p><a href="mailto:info@aapropertyservices.com">info@aapropertyservices.com</a></p>
+          <p><a href="tel:+34601927601">+34 601 927 601</a></p>
+        </address>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/i18n.js"></script>
+
+</body>
+</html>
